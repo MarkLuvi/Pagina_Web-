@@ -8,10 +8,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="headers.css" rel="stylesheet">
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
   <style>
-    /* 2da MITAD */
-
     /* ESTILOS DEL FORMULARIO */
     .form {
         border-color: black;
@@ -63,6 +64,26 @@
     }
     /* FIN DE LOS ESTILOS DE MAPS */
 
+    /*ESTILOS BOTONES ARTICULOS*/
+    #boton_articulos {
+        background-color: #5C5366;
+        color: white;
+        font-weight: bold;
+        height: 48px;
+        width: 146px;
+        border-radius: 5px;
+    }
+
+    #boton_articulos:hover {
+        background-color:#B64994;
+    } /* BOTÓN DE "View details" */
+
+    #boton_articulos:active {
+        background-color: #433C4B;
+    } /* BOTÓN DE "View details" */
+
+    /*ESTILOS BOTONES ARTICULOS*/
+
 
     /* ESTILOS DE LOS BOTONES DE NOTICIAS*/ 
     #read_more {
@@ -75,15 +96,21 @@
     } /* BOTÓN DE "READ MORE" */
 
     #read_more:hover {
-        background-color: #4A4252;
+        background-color:#B64994;
     } /* BOTÓN DE "READ MORE" */
 
     #read_more:active {
         background-color: #433C4B;
     } /* BOTÓN DE "READ MORE" */
 
+    #boton_read_more{
+      display:flex;
+      justify-content: center;
+    }
+
     .boton {
-        padding-top: 10px;
+    padding-top: 10px;
+        
     } /* CONTENEDOR DEL BOTÓN DE "READ MORE" */
 
     .btn-secondary {
@@ -142,10 +169,6 @@
         font-size: 15px;
     }
     
-    .footer-menu a:hover {
-        text-decoration: underline;
-    }
-    
     .social-list {
         display: flex;
         justify-content: center;
@@ -170,6 +193,31 @@
         padding-bottom: 10px;
     }
 
+    /**/
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    a:hover {
+      color:#B64994;
+      font-weight: bold;
+    }
+
+    #info_corta{
+      padding-left: 45px;
+    }
+
+    #musica {
+      padding-top: 30px;
+    }
+
+    #imagen_pelicula {
+      height: 600px;
+      width: 450px;
+    }
+   
+
 </style>
 
 </head>
@@ -184,11 +232,10 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="myCarousel" class="nav-link px-2 text-white">FILMS</a></li>
-          <li><a href="#sinopsis" class="nav-link px-2 text-white">SINOPSIS</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">NEWS</a></li>
+          <li><a href="#myCarousel" class="nav-link px-2 text-white">PRESENTACIÓN</a></li>
           <li><a href="#articulos" class="nav-link px-2 text-white">TIENDA</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">ABOUT</a></li>
+          <li><a href="#noticias" class="nav-link px-2 text-white">NOTICIAS</a></li>
+          <li><a href="#maps_form" class="nav-link px-2 text-white">CONTACTO</a></li>
         </ul>
       </div>
     </div>
@@ -226,7 +273,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imagenes/belle3.jpg." class="d-block w-100" alt="Descripción de la imagen 1">
+            <img src="imagenes/belle3.jpg" class="d-block w-100" alt="Descripción de la imagen 1">
     
             <div class="container">
               <div class="carousel-caption text-end">
@@ -249,119 +296,147 @@
 <!-- Fin de Carrusel-->
 
 <div class="contenedor_principal" >
+
+  
 <!-- Inicio de Presentación de Página -->
 <div id="sinopsis" class="container marketing">
-
   <hr class="featurette-divider">
   <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Belle: The Dragon and the Freckled Princess.</h2>
+
+    <div class="col-md-6">
+      <h2 class="featurette-heading"><b>Belle: The Dragon and the Freckled Princess.</b></h2>
       <dl class="movie-info">
-        <dt>Título original</dt>
-        <dd>Ryū to Sobakasu no Hime<span class="show-akas ui-corner-all">aka <i class="fa-solid fa-caret-down"></i></span></dd>
-        <dt>Año</dt>
-        <dd itemprop="datePublished">2021</dd>
+        
+      <!-- CONTENEDOR 2_Secciones --> 
+      <div class="container" id="2_secciones">
+        <div class="row">
+          <!-- Inicio de Presentación de Página -->
+          <div class="col-md-6" id="titulo_sinopsis">
+            <dt>Título original</dt>
+            <dd>Ryū to Sobakasu no Hime</dd>
+            <dt>Sinopsis</dt>
+            <dd itemprop="description" style="text-align: justify;">
+              Suzu es una joven de 17 años que, tras perder a su madre, se traslada a vivir con su padre a las afueras de la prefectura de Kochi. Con el corazón roto y distanciada del mundo, descubre "U", un espacio virtual en el que asume el rol de "Belle".
+            </dd>
+          </div><!-- Contenedor Titulo Sinopsis -->
 
-        <dt>Duración</dt>
-        <dd itemprop="duration">121 min.</dd>
-        <dt>Dirección</dt>
-        <dd class="directors">
-          <div class="credits">
-            <span class="nb" itemprop="director" itemscope itemtype="http://schema.org/Person">
-              <a class="link" itemprop="url" href="https://www.filmaffinity.com/es/name.php?name-id=172160425" title="Mamoru Hosoda">
-                <span itemprop="name">Mamoru Hosoda</span>
-              </a>
-            </span>
+            <!-- Contenedor Año Duracion Categoria -->
+            <div class="col-md-6" id="info_corta">
+            <dt>Año</dt>
+              <dd itemprop="datePublished">2021</dd>
+            <dt>Duración</dt>
+              <dd itemprop="duration">121 min.</dd>
+            <dt>Categoría</dt>
+            <dd class="card-cast">
+              <div class="cast-wrapper">Animación</div>
+            </dd>
+            
+            <dt>Dirección</dt>
+            <dd class="directors">
+              <div class="credits">
+                <span class="nb" itemprop="director" itemscope itemtype="http://schema.org/Person">
+                  <a class="link" itemprop="url" href="https://www.filmaffinity.com/es/name.php?name-id=172160425" title="Mamoru Hosoda">
+                    Mamoru Hosoda
+                  </a>
+                </span>
+              </div>
+            </dd>
+            <dt>Guion</dt>
+            <dd>
+              <div class="credits">
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=172160425" title="Mamoru Hosoda">Mamoru Hosoda</a></span>
+              </div>
+            </dd>
+            </div> <!-- Fin Contenedor Año Duracion Categoria -->  
           </div>
-        </dd>
-        <dt>Guion</dt>
-        <dd>
-          <div class="credits">
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=172160425" title="Mamoru Hosoda">Mamoru Hosoda</a></span>
-          </div>
-        </dd>
-        <dt>Reparto</dt>
-        <dd class="card-cast">
-          <div class="cast-wrapper">Animación</div>
-        </dd>
-        <dt>Música</dt>
-        <dd>
-          <div class="credits">
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=334126494" title="Yuta Bandoh">Yuta Bandoh</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=670740811" title="Ludvig Forssell">Ludvig Forssell</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=140865394" title="Taisei Iwasaki">Taisei Iwasaki</a></span>
-          </div>
-        </dd>
-        <dt>Fotografía</dt>
-        <dd>Animación</dd>
 
-        <dt>Compañías</dt>
-        <dd class="card-producer">
-          <div class="credits">
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=943380413" title="Studio Chizu">Studio Chizu</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=152371020" title="Dentsu Inc">Dentsu Inc</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=712543796" title="Kadokawa">Kadokawa</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=827907326" title="Nippon TV">Nippon TV</a>,</span>
-            <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=846901164" title="Toho">Toho</a></span>
+        <div class="row">
+           <!-- Inicio Contenedor Musica Foto -->
+           <div class="container" id="musica">
+            <dt>Música</dt>
+            <dd>
+              <div class="credits">
+                <span class="link_desc"><a href="https://www.filmaffinity.com/es/name.php?name-id=334126494" title="Yuta Bandoh">Yuta Bandoh</a>,</span>
+                <span class="link_desc"><a href="https://www.filmaffinity.com/es/name.php?name-id=670740811" title="Ludvig Forssell">Ludvig Forssell</a>,</span>
+                <span class="link_desc"><a href="https://www.filmaffinity.com/es/name.php?name-id=140865394" title="Taisei Iwasaki">Taisei Iwasaki</a></span>
+              </div>
+            </dd>
+
+            <dt>Compañías</dt>
+            <dd class="card-producer">
+              <div class="credits">
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=943380413" title="Studio Chizu">Studio Chizu</a>,</span>
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=152371020" title="Dentsu Inc">Dentsu Inc</a>,</span>
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=712543796" title="Kadokawa">Kadokawa</a>,</span>
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=827907326" title="Nippon TV">Nippon TV</a>,</span>
+                <span class="nb"><a href="https://www.filmaffinity.com/es/name.php?name-id=846901164" title="Toho">Toho</a></span>
+              </div>
+            </dd>
+
+            <dt>Género</dt>
+            <dd class="card-genres">
+              <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=AN&attr=rat_count&nodoc">Animación</a></span>.
+              <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=C-F&attr=rat_count&nodoc">Ciencia ficción</a></span>.
+              <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=DR&attr=rat_count&nodoc">Drama</a></span> |
+              <a href="https://www.filmaffinity.com/es/movietopic.php?topic=315711&attr=rat_count&nodoc">Internet / Informática</a>.
+              <a href="https://www.filmaffinity.com/es/movietopic.php?topic=746104&attr=rat_count&nodoc">Adolescencia</a>.
+              <a href="https://www.filmaffinity.com/es/movietopic.php?topic=868405&attr=rat_count&nodoc">Mundo virtual</a>.
+              <a href="https://www.filmaffinity.com/es/movietopic.php?topic=630442&attr=rat_count&nodoc">Música</a>
+            </dd>
           </div>
-        </dd>
-
-        <dt>Género</dt>
-        <dd class="card-genres">
-          <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=AN&attr=rat_count&nodoc">Animación</a></span>.
-          <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=C-F&attr=rat_count&nodoc">Ciencia ficción</a></span>.
-          <span itemprop="genre"><a href="https://www.filmaffinity.com/es/moviegenre.php?genre=DR&attr=rat_count&nodoc">Drama</a></span> |
-          <a href="https://www.filmaffinity.com/es/movietopic.php?topic=315711&attr=rat_count&nodoc">Internet / Informática</a>.
-          <a href="https://www.filmaffinity.com/es/movietopic.php?topic=746104&attr=rat_count&nodoc">Adolescencia</a>.
-          <a href="https://www.filmaffinity.com/es/movietopic.php?topic=868405&attr=rat_count&nodoc">Mundo virtual</a>.
-          <a href="https://www.filmaffinity.com/es/movietopic.php?topic=630442&attr=rat_count&nodoc">Música</a>
-        </dd>
-
-        <dt>Sinopsis</dt>
-        <dd itemprop="description">
-          Suzu es una joven de 17 años que, tras perder a su madre, se traslada a vivir con su padre a las afueras de la prefectura de Kochi. Con el corazón roto y distanciada del mundo, descubre "U", un espacio virtual en el que asume el rol de "Belle".
-        </dd>
+        </div> 
+        </div>
+ 
+      </div> <!-- FIN DE CONTENDEDOR 3_secciones -->
       </dl>
+    
+      <div class="col-md-6">
+        <img id="imagen_pelicula" src="imagenes/belle4.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto">
+        </div>
     </div>
-    <div class="col-md-5">
-      <img src="imagenes/belle4.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto" width="500" height="500">
-    </div>
+    
   </div>
 </div>
 <!-- Fin de Presentación de Página -->
-<br>
+
+<hr class="featurette-divider">
 <!-- Inicio de Artículos -->
  <br>
-<div id="articulos" class="container marketing">
-  <h3>Artículos en Venta</h3><br><br>
+ <div id="articulos" class="container marketing">
+  <h2><b>ARTÍCULOS</b></h2><br>
+  
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 d-flex flex-column align-items-center">
       <img src="imagenes/producto1.jpg" alt="Descripción de la imagen" class="bd-placeholder-img rounded-square" width="200" height="250">
-     <h6>BELLE Blu-ray/DVD</h6>
+      <h6>BELLE Blu-ray/DVD</h6>
       <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
       $ 24.99
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <p><a class="btn btn-secondary" id="boton_articulos" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 d-flex flex-column align-items-center">
       <img src="imagenes/producto2.jpg" alt="Descripción de la imagen" class="bd-placeholder-img rounded-square" width="200" height="250">
-      <h6>BELLE Steelbook</h6>
-      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-      $ 26.98
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <h6>BELLE Blu-ray/DVD</h6>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      $ 24.99
+      <p><a class="btn btn-secondary" id="boton_articulos" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
 
-    <div class="col-lg-4">
+    <div class="col-lg-4 d-flex flex-column align-items-center">
       <img src="imagenes/producto3.jpg" alt="Descripción de la imagen" class="bd-placeholder-img rounded-square" width="200" height="250">
-      <h6>BELLE Collector's Edition</h6>
-      <p>And lastly this, the third column of representative placeholder content.</p>
-      $ 51.98
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      <h6>BELLE Blu-ray/DVD</h6>
+      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      $ 24.99
+      <p><a class="btn btn-secondary" id="boton_articulos" href="#">View details &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
-</div>
+
+</div><!-- /.container -->
+
 <!-- Fin de Artículos -->
 
+
+<hr class="featurette-divider">
 <!-- NOTICAS -->
 <div class="container" id="noticias">
 
