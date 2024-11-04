@@ -13,6 +13,16 @@
 
 
   <style>
+
+    #sinopsis {
+      padding-top: 45px;
+    }
+
+
+    #articulos {
+      padding-top: 35px;
+    }
+
     /* ESTILOS DEL FORMULARIO */
     .form {
         border-color: black;
@@ -54,15 +64,18 @@
     }
     /* FIN DE LOS ESTILOS DEL FORMULARIO */
 
-    /* MAPS */
+    /* MAPS Y FORM */
     #maps {
         padding-top: 15px;
     }
 
     #maps_form {
-        padding-bottom: 25px;
+        padding-bottom: 55px;
+        padding-top: 35px;
     }
-    /* FIN DE LOS ESTILOS DE MAPS */
+
+
+    /* FIN DE LOS ESTILOS DE MAPS Y FORM */
 
     /*ESTILOS BOTONES ARTICULOS*/
     #boton_articulos {
@@ -85,7 +98,13 @@
     /*ESTILOS BOTONES ARTICULOS*/
 
 
-    /* ESTILOS DE LOS BOTONES DE NOTICIAS*/ 
+    /* NOTICIAS */ 
+    #noticias {
+      padding-top: 35px;;
+    }
+    /* NOTICIAS */ 
+
+    /* ESTILOS DE LOS BOTONES DE NOTICIAS */ 
     #read_more {
         background-color: #5C5366;
         color: white;
@@ -110,7 +129,7 @@
 
     .boton {
     padding-top: 10px;
-        
+    
     } /* CONTENEDOR DEL BOTÓN DE "READ MORE" */
 
     .btn-secondary {
@@ -135,6 +154,9 @@
         font-weight: bold;
     }
     /* FIN DE LOS ESTILOS DE LOS BOTONES DE NOTICIAS*/ 
+
+
+    /* ESTILOS DEL MAPS Y FORM */
 
     /* ESTILOS DEL FOOTER */
     footer {
@@ -300,7 +322,6 @@
   
 <!-- Inicio de Presentación de Página -->
 <div id="sinopsis" class="container marketing">
-  <hr class="featurette-divider">
   <div class="row featurette">
 
     <div class="col-md-6">
@@ -394,18 +415,19 @@
         <img id="imagen_pelicula" src="imagenes/belle4.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto">
         </div>
     </div>
-    
+    <hr class="featurette-divider">
   </div>
 </div>
 <!-- Fin de Presentación de Página -->
 
-<hr class="featurette-divider">
+
 <!-- Inicio de Artículos -->
  <br>
  <div id="articulos" class="container marketing">
+
   <h2><b>ARTÍCULOS</b></h2><br>
   
-  <div class="row">
+  <div class="row" id="articulos">
     <div class="col-lg-4 d-flex flex-column align-items-center">
       <img src="imagenes/producto1.jpg" alt="Descripción de la imagen" class="bd-placeholder-img rounded-square" width="200" height="250">
       <h6>BELLE Blu-ray/DVD</h6>
@@ -431,12 +453,13 @@
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
 
+  <hr class="featurette-divider">
+
 </div><!-- /.container -->
 
 <!-- Fin de Artículos -->
 
 
-<hr class="featurette-divider">
 <!-- NOTICAS -->
 <div class="container" id="noticias">
 
@@ -485,14 +508,15 @@
 </div> <!-- CONTAINER --> 
 
 <!--FORMULARIO DE CONTACTO CON GOOGLE MAPS (PARA USAR)-->
-<hr class="featurette-divider">
 
-<div class="container"  id="maps_form">
+<div class="container">
+
+  <hr class="featurette-divider">
 
   <!-- GOOGLE MAPS -->
-  <div class="row featurette">
+  <div class="row featurette" id="maps_form">
       <div class="col-md-6" id="maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4994.788058278279!2d-109.71888772555405!3d23.07855798042514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a8b9adb1c09%3A0x502119155472a638!2sITES%20LOS%20CABOS%20Instituto%20Tecnol%C3%B3gico!5e0!3m2!1ses-419!2smx!4v1730277659545!5m2!1ses-419!2smx" width="650" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4994.788058278279!2d-109.71888772555405!3d23.07855798042514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a8b9adb1c09%3A0x502119155472a638!2sITES%20LOS%20CABOS%20Instituto%20Tecnol%C3%B3gico!5e0!3m2!1ses-419!2smx!4v1730277659545!5m2!1ses-419!2smx" width="650" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
   
   <!-- FORMULARIO DE CONTACTO -->
