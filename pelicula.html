@@ -14,8 +14,16 @@
 
   <style>
 
+    /* SINOPSIS */
     #sinopsis {
       padding-top: 45px;
+      padding-left: 45px;
+    }
+
+    #imagen_p{
+      padding: 0;
+      height: 100%;
+      width: 100%;
     }
 
     /* ARTICULOS */
@@ -79,8 +87,6 @@
         padding-bottom: 55px;
         padding-top: 35px;
     }
-
-
     /* FIN DE LOS ESTILOS DE MAPS Y FORM */
 
     /*ESTILOS BOTONES ARTICULOS*/
@@ -161,9 +167,6 @@
     }
     /* FIN DE LOS ESTILOS DE LOS BOTONES DE NOTICIAS*/ 
 
-
-    /* ESTILOS DEL MAPS Y FORM */
-
     /* ESTILOS DEL FOOTER */
     footer {
         background-color: black;
@@ -200,6 +203,10 @@
     .social-list {
         display: flex;
         justify-content: center;
+    }
+
+    #social_media {
+      padding: 0;
     }
     
     .social-list a {
@@ -323,9 +330,9 @@
       </div>
 <!-- Fin de Carrusel-->
 
+<!-- CONTENEDOR PRINCIPAL -->
 <div class="contenedor_principal" >
 
-  
 <!-- Inicio de Presentación de Página -->
 <div id="sinopsis" class="container marketing">
   <div class="row featurette">
@@ -378,8 +385,8 @@
           </div>
 
         <div class="row">
-           <!-- Inicio Contenedor Musica Foto -->
-           <div class="container" id="musica">
+          <!-- Inicio Contenedor Musica Foto -->
+          <div class="container" id="musica">
             <dt>Música</dt>
             <dd>
               <div class="credits">
@@ -412,24 +419,20 @@
             </dd>
           </div>
         </div> 
-        </div>
- 
-      </div> <!-- FIN DE CONTENDEDOR 3_secciones -->
+        </div> <!-- FIN DE CONTENDEDOR 2_secciones -->
+      </div> 
       </dl>
     
-      <div class="col-md-6">
-        <img id="imagen_pelicula" src="imagenes/belle4.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto">
+      <div class="col-md-6" id="imagen_pelicula">
+        <img id="imagen_p" src="imagenes/belle4.jpg" alt="Descripción de la imagen" class="featurette-image img-fluid mx-auto">
         </div>
     </div>
     <hr class="featurette-divider">
-  </div>
-</div>
-<!-- Fin de Presentación de Página -->
+  </div> <!-- Fin de Presentación de Página -->
 
+    <!-- Inicio de Artículos -->
 
-<!-- Inicio de Artículos -->
- <br>
- <div id="articulos" class="container marketing">
+  <div id="articulos" class="container marketing">
 
   <h2><b>ARTÍCULOS</b></h2><br>
   
@@ -462,7 +465,6 @@
   <hr class="featurette-divider">
 
 </div><!-- /.container -->
-
 <!-- Fin de Artículos -->
 
 
@@ -514,7 +516,6 @@
 </div> <!-- CONTAINER --> 
 
 <!--FORMULARIO DE CONTACTO CON GOOGLE MAPS (PARA USAR)-->
-
 <div class="container">
 
   <hr class="featurette-divider">
@@ -552,7 +553,8 @@
           </div> <!--FIN DEL FORM-->
       </div>
   </div> <!-- row featurette -->
-</div>
+</div> 
+
 </div> <!-- Fin del contenedor principal -->
 
 <footer id="footer">
@@ -675,8 +677,7 @@
               errorTel.textContent = ""; 
           }
       }
-  
-  </script>
+</script>
 
 </body>
 </html>
